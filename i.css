@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Users Container */
+#users-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 25px;
+}
+
+/* User Card */
+.user-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.user-card:hover {
+    transform: perspective(800px) rotateY(5deg);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* User Avatar */
+.user-avatar {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+
+.user-card:hover .user-avatar img {
+    transform: scale(1.1);
+}
+
+/* User Info */
+.user-info {
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+
+.user-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00c3ff;
+}
+
+.user-info p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 6px 0;
+}
+
+.user-info a {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Icons */
+.user-info i {
+    margin-right: 8px;
+    color: #00c3ff;
+}
